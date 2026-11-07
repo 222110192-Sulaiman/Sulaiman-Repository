@@ -1,0 +1,21 @@
+
+package edu.psu.se411.lab09_inventory;
+
+public class ElectronicDevice extends Item {
+
+    private String category;
+
+    public ElectronicDevice(int id, String name, String category) {
+        super(id, name);
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Category: " + category;
+    }
+}
